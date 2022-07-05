@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   --bg-color: #fff;
   --primary-color: #228be6;
@@ -20,52 +22,100 @@
 body {
   background-color: var(--bg-color);
   color: var(--color);
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
-/* Header */
-header {
-  /* Nav */
-}
-header nav {
-  width: 90vw;
-  padding: 1rem;
-  margin: 1rem auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* Logo */
-}
-header nav .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header nav .logo svg {
-  width: 4em;
-  position: relative;
-}
-header nav .logo p {
-  font-size: 1.7em;
-  font-weight: 500;
-  margin-left: 1em;
-}
-header nav .menu {
-  flex-basis: 35%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-header nav .menu a {
-  text-align: center;
-  flex-basis: 100%;
-  font-size: 1.1em;
-  font-weight: 400;
-  color: var(--color);
-  text-decoration: none;
-  transition: all 200ms ease-in-out;
-}
-header nav .menu a:hover {
-  font-size: 1.2em;
-  font-weight: 500;
-}/*# sourceMappingURL=style(index).css.map */
+/*--Header--*/
+
+  /*-Nav-*/
+  nav {
+    width: 90vw; margin: 1.5em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+    /* Logo */
+    nav .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    nav .logo svg {
+      width: 4rem;
+    }
+    nav .logo p {
+      font-size: 1.5em; font-weight: 500;
+      margin-left: 1em;
+    }
+
+    /* Menu */
+    nav .menu {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .menu .menu-items {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    nav .menu .menu-items a{
+      color: var(--color);
+      font-size: 1em; font-family: 400;
+      text-decoration: none;
+      transition: font-size 200ms ease-in-out;
+      cursor: pointer;
+    }
+    nav .menu .menu-items a:hover {
+      font-size: 1.1em; font-weight: 500;
+    }
+    nav .menu .menu-items img {
+      width: 20px;
+      cursor: pointer;
+    }
+    nav .menu .menu-items .dark {
+      display: none;
+    }
+
+  /*-Hero-*/
+  .hero {
+    width: 90vw;
+    margin: 8em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    /* Hero-text */
+    .hero .hero-text  {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero .hero-text h1 {
+      font-weight: 600;
+    }
+    .hero .hero-text span {
+      display: block;
+      font-size: 1.6em;
+      line-height: 2em;
+    }
+
+    /* Hero-img */
+    .hero .hero-img{
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero .hero-img svg {
+      width: 15em;
+    }
+  
+
+/*--Main--*/
+
+/*--Footer--*/

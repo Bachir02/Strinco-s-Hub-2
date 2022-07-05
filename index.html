@@ -10,29 +10,49 @@
 <body>
     <!-- Header -->
     <header>
-        <!-- Nav -->
+        <!-- Navbar -->
         <nav>
-            <!-- Logo -->
-            <div class="logo">
-                <svg class="logo"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 950"><defs><style>.cls-1{fill:url(#linear-gradient);}.cls-2{fill:#fff;}</style><linearGradient id="linear-gradient" x1="45.77" y1="45.77" x2="906.84" y2="906.84" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4884ee"/><stop offset="1" stop-color="#06bcfb"/></linearGradient></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><rect class="cls-1" width="950" height="950" rx="150"/><path class="cls-2" d="M366.69,392.88q-2.49-23.26-20.86-36.22t-47.68-13q-20.59,0-35.33,6.21t-22.55,16.87a41,41,0,0,0-8,24.32,36.3,36.3,0,0,0,5.24,19.71,45.25,45.25,0,0,0,14.29,14.12,98.69,98.69,0,0,0,20.07,9.68,217.77,217.77,0,0,0,22.19,6.57l34.09,8.52a237.7,237.7,0,0,1,39.69,13,142.1,142.1,0,0,1,34.27,20.6,91.92,91.92,0,0,1,24.05,30q8.88,17.58,8.88,41.2,0,31.95-16.33,56.19t-47.15,37.82q-30.79,13.59-74.48,13.59-42.43,0-73.6-13.14t-48.65-38.36q-17.49-25.2-18.91-61.43h64.81q1.42,19,11.72,31.61a62,62,0,0,0,26.9,18.82q16.61,6.21,37.2,6.21,21.48,0,37.73-6.48t25.48-18.11a43.41,43.41,0,0,0,9.41-27.26q-.18-14.2-8.35-23.52T338,514.77a231.32,231.32,0,0,0-34.18-11.27l-41.37-10.66q-44.93-11.54-70.94-35.06t-26-62.59q0-32.15,17.49-56.29t47.67-37.55q30.19-13.41,68.36-13.41,38.71,0,67.92,13.41t45.9,37.11q16.68,23.7,17.22,54.42Z"/><path class="cls-2" d="M493.64,656.55V292.92h65.88V446.86H728V292.92h66.05V656.55H728V502.08H559.52V656.55Z"/></g></g>
+            <div class="logo">   <!-- Logo -->
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 950">
+                    <defs><style>.cls-1{fill:url(#linear-gradient);}.cls-2{fill:#fff;}</style><linearGradient id="linear-gradient" x1="45.77" y1="45.77" x2="906.84" y2="906.84" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4884ee"/><stop offset="1" stop-color="#06bcfb"/></linearGradient></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><rect class="cls-1" width="950" height="950" rx="150"/><path class="cls-2" d="M366.69,392.88q-2.49-23.26-20.86-36.22t-47.68-13q-20.59,0-35.33,6.21t-22.55,16.87a41,41,0,0,0-8,24.32,36.3,36.3,0,0,0,5.24,19.71,45.25,45.25,0,0,0,14.29,14.12,98.69,98.69,0,0,0,20.07,9.68,217.77,217.77,0,0,0,22.19,6.57l34.09,8.52a237.7,237.7,0,0,1,39.69,13,142.1,142.1,0,0,1,34.27,20.6,91.92,91.92,0,0,1,24.05,30q8.88,17.58,8.88,41.2,0,31.95-16.33,56.19t-47.15,37.82q-30.79,13.59-74.48,13.59-42.43,0-73.6-13.14t-48.65-38.36q-17.49-25.2-18.91-61.43h64.81q1.42,19,11.72,31.61a62,62,0,0,0,26.9,18.82q16.61,6.21,37.2,6.21,21.48,0,37.73-6.48t25.48-18.11a43.41,43.41,0,0,0,9.41-27.26q-.18-14.2-8.35-23.52T338,514.77a231.32,231.32,0,0,0-34.18-11.27l-41.37-10.66q-44.93-11.54-70.94-35.06t-26-62.59q0-32.15,17.49-56.29t47.67-37.55q30.19-13.41,68.36-13.41,38.71,0,67.92,13.41t45.9,37.11q16.68,23.7,17.22,54.42Z"/><path class="cls-2" d="M493.64,656.55V292.92h65.88V446.86H728V292.92h66.05V656.55H728V502.08H559.52V656.55Z"/></g></g>
                 </svg>
                 <p>Strinco's Hub</p>
             </div>
-            <!-- Menu -->
-            <div class="menu">
-                <a href="">Home</a>
-                <a href="">Contatti</a>
-                <a href="">Iniziative</a>
-                <a href="">Impostazioni</a>
+            <div class="menu">  <!-- Menu -->
+                <div class="menu-items"><a href="">Home</a></div>
+                <div class="menu-items"><a href="">Iniziative</a></div>
+                <div class="menu-items"><a href="">Contattaci</a></div>
+                <div class="menu-items" id="dark-mode-toggle">
+                    <img src="imgs/light.png" alt="" class="light">
+                    <img src="imgs/dark.png" alt="" class="dark">
+                </div>
             </div>
         </nav>
-        <!-- Page Heading -->
-        <div class="hero"></div>
+        <!-- Hero -->
+        <div class="hero">
+            <div class="hero-text"> <!-- Hero text -->
+                <h1>Benvenuto in <span>Strinco's Hub</span></h1>
+            </div>
+            <div class="hero-img">  <!-- Hero image -->
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 950">
+                    <defs><style>.cls-1{fill:url(#linear-gradient);}.cls-2{fill:#fff;}</style><linearGradient id="linear-gradient" x1="45.77" y1="45.77" x2="906.84" y2="906.84" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4884ee"/><stop offset="1" stop-color="#06bcfb"/></linearGradient></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><rect class="cls-1" width="950" height="950" rx="150"/><path class="cls-2" d="M366.69,392.88q-2.49-23.26-20.86-36.22t-47.68-13q-20.59,0-35.33,6.21t-22.55,16.87a41,41,0,0,0-8,24.32,36.3,36.3,0,0,0,5.24,19.71,45.25,45.25,0,0,0,14.29,14.12,98.69,98.69,0,0,0,20.07,9.68,217.77,217.77,0,0,0,22.19,6.57l34.09,8.52a237.7,237.7,0,0,1,39.69,13,142.1,142.1,0,0,1,34.27,20.6,91.92,91.92,0,0,1,24.05,30q8.88,17.58,8.88,41.2,0,31.95-16.33,56.19t-47.15,37.82q-30.79,13.59-74.48,13.59-42.43,0-73.6-13.14t-48.65-38.36q-17.49-25.2-18.91-61.43h64.81q1.42,19,11.72,31.61a62,62,0,0,0,26.9,18.82q16.61,6.21,37.2,6.21,21.48,0,37.73-6.48t25.48-18.11a43.41,43.41,0,0,0,9.41-27.26q-.18-14.2-8.35-23.52T338,514.77a231.32,231.32,0,0,0-34.18-11.27l-41.37-10.66q-44.93-11.54-70.94-35.06t-26-62.59q0-32.15,17.49-56.29t47.67-37.55q30.19-13.41,68.36-13.41,38.71,0,67.92,13.41t45.9,37.11q16.68,23.7,17.22,54.42Z"/><path class="cls-2" d="M493.64,656.55V292.92h65.88V446.86H728V292.92h66.05V656.55H728V502.08H559.52V656.55Z"/></g></g>
+                </svg>
+            </div>
+        </div>
     </header>
+
     <!-- Main -->
-    <main></main>
+    <main>
+
+    </main>
+
     <!-- Footer -->
-    <footer></footer>
+    <footer >
+
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/darkMode.js"></script>
+
 </body>
 </html>
