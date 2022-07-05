@@ -82,7 +82,7 @@ body {
   /*-Hero-*/
   .hero {
     width: 90vw;
-    margin: 8em auto;
+    margin: 25vh auto;
     display: flex;
     justify-content: center;
     align-items: center;
