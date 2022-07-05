@@ -29,7 +29,7 @@ body {
 
   /*-Nav-*/
   nav {
-    width: 90vw; margin: 1.5em auto;
+    width: 80vw; margin: 1.5em auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,7 +81,7 @@ body {
 
   /*-Hero-*/
   .hero {
-    width: 90vw;
+    width: 80vw;
     margin: 25vh auto;
     display: flex;
     justify-content: center;
