@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --bg-color: #fff;
+  --bg-color: #F5F5F5;
   --primary-color: #228be6;
   --color: #000;
 }
@@ -26,7 +26,9 @@ body {
 }
 
 /*--Header--*/
-
+header {
+  height: 100vh;
+}
   /*-Nav-*/
   nav {
     width: 80vw; margin: 1.5em auto;
@@ -96,7 +98,8 @@ body {
       text-align: center;
     }
     .hero .hero-text h1 {
-      font-weight: 600;
+      font-size: 2.5em; font-weight: 600;
+      
     }
     .hero .hero-text span {
       display: block;
