@@ -5,12 +5,14 @@
   --bg-color: #F5F5F5;
   --primary-color: #228be6;
   --color: #000;
+  --shadow-navbar: rgba(100, 100, 100, 0.275);
 }
 
 .darkMode {
   --bg-color: #212529;
   --primary-color: #228be6;
   --color: #fff;
+  --shadow-navbar: rgba(0, 0, 0, 0.275);
 }
 
 * {
@@ -31,10 +33,14 @@ header {
 }
   /*-Nav-*/
   nav {
-    width: 80vw; margin: 1.5em auto;
+    width: 100vw; margin: 0 auto;padding: 1em 10vw;
+    background-color: var(--bg-color);
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 5px 15px var(--shadow-navbar);
   }
     /* Logo */
     nav .logo {
@@ -122,3 +128,9 @@ header {
 /*--Main--*/
 
 /*--Footer--*/
+
+
+
+main {
+  height: 100vh;
+}
