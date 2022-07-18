@@ -73,7 +73,7 @@ header {
       color: var(--color);
       font-size: 1em; font-family: 400;
       text-decoration: none;
-      transition: font-size 200ms ease-in-out;
+      transition: font-size 180ms ease-in-out;
       cursor: pointer;
     }
     nav .menu .menu-items a:hover {
@@ -123,8 +123,27 @@ header {
     .hero .hero-img svg {
       width: 17em;
     }
-  
+
+
+/*--Divider--*/
+.divider {
+  width: 100vw; height: 20vh;
+  background-color: #228be6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  /* p */
+  .divider p {
+    color: white;
+    font-size: 50px;
+  }
+
 
 /*--Main--*/
+main {
+  height: auto;
+}
+
 
 /*--Footer--*/
